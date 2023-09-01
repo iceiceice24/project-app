@@ -1,0 +1,80 @@
+/* Header styles */
+.Header {
+  background-color: #000000;
+  color: #ff4536;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.HeaderContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.Logo {
+  margin: 0;
+}
+
+.Navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Navigation li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.Navigation li:last-child {
+  margin-right: 0;
+}
+
+.Navigation li a {
+  color: white;
+  text-decoration: none;
+}
+
+.BurgerMenu {
+  display: none; /* Hide the burger menu by default on larger screens */
+  cursor: pointer;
+  padding: 15px;
+}
+
+.BurgerMenu .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .BurgerMenu {
+    display: block;
+  }
+
+  .Navigation {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .Navigation.open {
+    display: block;
+  }
+
+  .Navigation li {
+    margin: 10px;
+  }
+}

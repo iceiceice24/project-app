@@ -1,0 +1,40 @@
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-decoration: none;
+}
+
+.social-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1vh;
+}
+
+.icon1 {
+  margin-right: 10px;
+}
+
+.icon {
+  margin-top: 10px;
+}
+
+.icon a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icon a:hover {
+  color: #ff4536;
+}
+
+.typewrite > .wrap {
+  border-right: 0.08em solid #ffffff; /* Change the border color to red */
+  transform: translateZ(0); /* Apply hardware acceleration */
+  color: #ff4536;
+  text-decoration: none;
+  font-size: 50px;
+}
